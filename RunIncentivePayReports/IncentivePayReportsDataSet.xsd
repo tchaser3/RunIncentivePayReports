@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IncentivePayReportsDataSet" targetNamespace="http://tempuri.org/IncentivePayReportsDataSet.xsd" xmlns:mstns="http://tempuri.org/IncentivePayReportsDataSet.xsd" xmlns="http://tempuri.org/IncentivePayReportsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IncentivePayReportsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="IncentivePayReportsDataSet" msprop:Generator_DataSetName="IncentivePayReportsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="incentivepayreports" msprop:Generator_RowEvHandlerName="incentivepayreportsRowChangeEventHandler" msprop:Generator_RowDeletedName="incentivepayreportsRowDeleted" msprop:Generator_RowDeletingName="incentivepayreportsRowDeleting" msprop:Generator_RowEvArgName="incentivepayreportsRowChangeEvent" msprop:Generator_TablePropName="incentivepayreports" msprop:Generator_RowChangedName="incentivepayreportsRowChanged" msprop:Generator_RowChangingName="incentivepayreportsRowChanging" msprop:Generator_TableClassName="incentivepayreportsDataTable" msprop:Generator_RowClassName="incentivepayreportsRow" msprop:Generator_TableVarName="tableincentivepayreports" msprop:Generator_UserTableName="incentivepayreports">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
+              <xs:element name="CurrentStatusDate" msprop:Generator_ColumnPropNameInRow="CurrentStatusDate" msprop:Generator_ColumnPropNameInTable="CurrentStatusDateColumn" msprop:Generator_ColumnVarNameInTable="columnCurrentStatusDate" msprop:Generator_UserColumnName="CurrentStatusDate" type="xs:dateTime" />
+              <xs:element name="EmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_UserColumnName="EmployeeName" type="xs:string" />
+              <xs:element name="ManagerName" msprop:Generator_ColumnPropNameInRow="ManagerName" msprop:Generator_ColumnPropNameInTable="ManagerNameColumn" msprop:Generator_ColumnVarNameInTable="columnManagerName" msprop:Generator_UserColumnName="ManagerName" type="xs:string" />
+              <xs:element name="PositionTitle" msprop:Generator_ColumnPropNameInRow="PositionTitle" msprop:Generator_ColumnPropNameInTable="PositionTitleColumn" msprop:Generator_ColumnVarNameInTable="columnPositionTitle" msprop:Generator_UserColumnName="PositionTitle" type="xs:string" />
+              <xs:element name="CustomerAssignedID" msprop:Generator_ColumnPropNameInRow="CustomerAssignedID" msprop:Generator_ColumnPropNameInTable="CustomerAssignedIDColumn" msprop:Generator_ColumnVarNameInTable="columnCustomerAssignedID" msprop:Generator_UserColumnName="CustomerAssignedID" type="xs:string" />
+              <xs:element name="AssignedProjectID" msprop:Generator_ColumnPropNameInRow="AssignedProjectID" msprop:Generator_ColumnPropNameInTable="AssignedProjectIDColumn" msprop:Generator_ColumnVarNameInTable="columnAssignedProjectID" msprop:Generator_UserColumnName="AssignedProjectID" type="xs:string" />
+              <xs:element name="ProjectName" msprop:Generator_ColumnPropNameInRow="ProjectName" msprop:Generator_ColumnPropNameInTable="ProjectNameColumn" msprop:Generator_ColumnVarNameInTable="columnProjectName" msprop:Generator_UserColumnName="ProjectName" type="xs:string" />
+              <xs:element name="TotalUnits" msprop:Generator_ColumnPropNameInRow="TotalUnits" msprop:Generator_ColumnPropNameInTable="TotalUnitsColumn" msprop:Generator_ColumnVarNameInTable="columnTotalUnits" msprop:Generator_UserColumnName="TotalUnits" type="xs:int" />
+              <xs:element name="RatePerUnit" msprop:Generator_ColumnPropNameInRow="RatePerUnit" msprop:Generator_ColumnPropNameInTable="RatePerUnitColumn" msprop:Generator_ColumnVarNameInTable="columnRatePerUnit" msprop:Generator_UserColumnName="RatePerUnit" type="xs:decimal" />
+              <xs:element name="TotalIncentivePay" msprop:Generator_ColumnPropNameInRow="TotalIncentivePay" msprop:Generator_ColumnPropNameInTable="TotalIncentivePayColumn" msprop:Generator_ColumnVarNameInTable="columnTotalIncentivePay" msprop:Generator_UserColumnName="TotalIncentivePay" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:incentivepayreports" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
